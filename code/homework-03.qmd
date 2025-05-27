@@ -19,6 +19,13 @@ library(readxl)
 
 ```
 
+## Problem 1: Personal Data
+
+### A: Data Summarizing
+
+I could calculate the mean duration of bike rides (response variable) and compare the average times between the two directions (to Cambpell or to home). This is because I beleive that I bike faster toward Campbell hall compared to home, as I usually have a class I need to be on time for when going to campus, rather than simply biking home where there is usually no strict time that I need to arrive at.
+
+
 ## Problem 3: Statistical critique
 
 ### A: Revisit and Summarize
