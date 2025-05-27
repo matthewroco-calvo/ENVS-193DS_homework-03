@@ -4,6 +4,21 @@ format: html
 editor: visual
 ---
 
+**Github Repository link:** https://github.com/matthewroco-calvo/ENVS-193DS_homework-03
+
+## Setup (packages and data)
+
+```{r}
+
+library(tidyverse)
+library(janitor)
+library(here)
+library(gt)
+library(flextable)
+library(readxl)
+
+```
+
 ## Problem 3: Statistical critique
 
 ### A: Revisit and Summarize
@@ -12,15 +27,13 @@ A two factor ANOVA statistical test was used. The response variable is alpha div
 
 ![Figure 5](figure5-193ds.png)
 
-### B: Visual Clarity 
+### B: Visual Clarity
 
 The figure created by the authors clearly represented their data by including relevant statistics. The axes were clear by having their predictor variable of time since fire on the x axis, and their response variable of alpha diversity on the y axis. Moreover, by having different types of lines (solid and dashed) on the same chart to represent treatments (burned and unburned), readers can directly compare how different treatments impacted the alpha diversity. The figure also contained the mean alpha diversity and standard error at each point, however the underlying data was not displayed, making it difficult for readers to get a more detailed picture of the distribution of data points.
-
 
 ### C: Aesthetic Clarity
 
 The creators of the figure did a good job in reducing its visual clutter. They were able to keep the data:ink ratio low by taking out gridlines, which allows for viewers to more clearly see the data points. Moreover, different species (such as lizards, mammals,etc) and fire types (burned and unburned) were clearly labeled without being overwhelming.
-
 
 ### D: Recommendations
 
