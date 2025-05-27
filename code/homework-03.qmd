@@ -1,0 +1,15 @@
+---
+title: "homework_03"
+format: html
+editor: visual
+---
+
+## Problem 3: Statistical critique
+
+### A: Revisit and Summarize
+
+A two factor ANOVA statistical test was used. The response variable is alpha diversity (measured using the Shannon-Wiener index) and the predictor variables are treatment (burned or underburned) and time (pre-burn, postburn 1, post burn 2).
+
+![Figure 5](figure5-193ds.png)
+
+
