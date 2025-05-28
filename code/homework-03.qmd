@@ -54,7 +54,8 @@ ggplot( data = personal_data_clean, #starting plot using the clean dataframe
   geom_jitter( #adding a jitterplot as the first layer in order to show the underlying data
     height = 0, #setting no vertical jitter to preserve values
     width = 0.1, #reducing horizontal jitter for decluttering
-    alpha = 0.4 #making points more transparent
+    alpha = 0.4, #making points more transparent
+    shape = 21 #making shapes of points open circles
   ) +
   geom_pointrange( #adding a second layer using geom_pointrange to add mean and SE bars
     data = personal_data_summary, #using the summary dataframe
@@ -72,13 +73,17 @@ ggplot( data = personal_data_clean, #starting plot using the clean dataframe
   scale_color_manual(values =
                      c(
                      "Campbell" = "darkorchid", #coloring datapoints differently
-                     "Home" = "darkslategray")) +
+                     "Home" = "coral3")) +
   theme(legend.position = "none")
 
 
 ```
 
+### C: Caption
 
+**Figure 1: Average bike ride duration's are longer when biking to Home than to Campbell**
+
+Open circles represent observations of bike ride duration in seconds (total n = 30), and filled circles represent mean. Colors represent direction (purple: Campbell, orange: Home). Bars represent standard error.
 
 ## Problem 3: Statistical critique
 
