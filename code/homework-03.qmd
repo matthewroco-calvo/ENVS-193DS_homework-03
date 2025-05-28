@@ -102,6 +102,13 @@ Table #displaying the table
 
 ```
 
+## Problem 2: Affective visualization
+
+### 1: Describe in words what an affective visualization could look like for your personal data
+
+My affective visual communication comparing the commute time towards campus and towards home could have curves representing a histogram of commute times, with collages of the scenes of the rides underneath them. I would have a central axis where each curve flipped (two sided x axis). One side of the axes would represent the bike times towards campus, with the reflection representing the bike times towards home. Underneath the curves, I would construct collages of UCSB and Isla Vista landmarks that I bike past on my commute. This could include the infamous roundabouts, Stroke tower, Pardall tunnel, the SRB, Kozy (my favorite IV cafe), the bluffs/ocean, and others. The ends of each side would come together with a photo of my home (perhaps using a generic IV apartment for privacy) and Campbell hall, both reflected exactly over the axis.
+
+
 ## Problem 3: Statistical critique
 
 ### A: Revisit and Summarize
