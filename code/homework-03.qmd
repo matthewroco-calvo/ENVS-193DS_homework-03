@@ -17,6 +17,10 @@ library(gt)
 library(flextable)
 library(readxl)
 
+personal_data <- read_xlsx(
+  here(
+  "data", "personaldatahw3.xlsx"))
+
 ```
 
 ## Problem 1: Personal Data
@@ -24,6 +28,56 @@ library(readxl)
 ### A: Data Summarizing
 
 I could calculate the mean duration of bike rides (response variable) and compare the average times between the two directions (to Cambpell or to home). This is because I beleive that I bike faster toward Campbell hall compared to home, as I usually have a class I need to be on time for when going to campus, rather than simply biking home where there is usually no strict time that I need to arrive at.
+
+### B: Visualization
+
+```{r}
+
+personal_data_clean <- personal_data |> 
+  clean_names() #creating a new dataframe from personal_data and cleaning column names for ease of use
+
+personal_data_summary <- personal_data_clean |> #creating a summary dataframe using the cleaned up data
+  group_by(direction) |> #grouping by direction
+  summarize( #using the summarize function 
+    n = length(duration),  # count of data
+    mean = mean(duration), # calculating the means of both groups
+    standard_deviation = sd(duration), # calculating the standard deviations
+    standard_error = standard_deviation/sqrt(n) #calculating standard error using the formula
+  ) 
+
+ggplot( data = personal_data_clean, #starting plot using the clean dataframe
+        aes(
+          x = direction, #setting x and y axes
+          y = duration,
+          color = direction #coloring/sorting by the two directions
+        )) +
+  geom_jitter( #adding a jitterplot as the first layer in order to show the underlying data
+    height = 0, #setting no vertical jitter to preserve values
+    width = 0.1, #reducing horizontal jitter for decluttering
+    alpha = 0.4 #making points more transparent
+  ) +
+  geom_pointrange( #adding a second layer using geom_pointrange to add mean and SE bars
+    data = personal_data_summary, #using the summary dataframe
+    aes(
+      x = direction, # putting direction (categorical variable) on the x axis
+      y = mean, #y axis is the mean
+      ymax = mean + standard_error, #adding error bars that are the standard error
+      ymin = mean - standard_error
+    ) ) +
+  labs( #labeling the chart's x and y axis 
+    x = "Direction", 
+    y = "Duration (s)"
+  ) +
+  theme_classic() + #setting a theme
+  scale_color_manual(values =
+                     c(
+                     "Campbell" = "darkorchid", #coloring datapoints differently
+                     "Home" = "darkslategray")) +
+  theme(legend.position = "none")
+
+
+```
+
 
 
 ## Problem 3: Statistical critique
