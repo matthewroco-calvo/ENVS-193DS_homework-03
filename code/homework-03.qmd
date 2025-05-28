@@ -96,7 +96,7 @@ Table <- personal_data_summary |>  #creating the table as an object using summar
 columns = mean, #selecting columns to be edited
 decimals = 1 ) |> #rounding to 1 decimal point
   cols_label( direction = "Direction", #altering names of columns/header to be capatialized and readable
-                     mean = "Mean") 
+                     mean = "Mean (s)") 
 
 Table #displaying the table
 
@@ -111,6 +111,14 @@ My affective visual communication comparing the commute time towards campus and 
 ### B: Create a sketch (on paper) of your idea
 
 ![](sketch.png)
+
+### C: Draft of Visualization
+
+![](draft.jpg)
+
+### D: Artist Statement
+
+For the content of the piece, I wanted to include the sites and scenery that many students (myself included) forget to appreciate on their daily commute to and from campus. I found inspiration from this work from my EEMB 3 class, where for one assignment we had to walk around campus and observe local plant biodiversity, which made me realize how much of my environment I let fade into the background of my college life.This newfound observancy, along with seeing various collages made by my roommate, inspired me to create a piece which combined these two things in order to remind us of the beauty of our surroundings, while also displaying data. The form of this work is a digital collage, and I am currently creating the project digitally using tools on my ipad such as canva, goodnotes, and procreate.  
 
 ## Problem 3: Statistical critique
 
