@@ -1,5 +1,7 @@
 ---
-title: "homework_03"
+title: "Homework 3"
+Author: Matthew Roco-Calvo
+Date: 05-28-2025
 format: html
 editor: visual
 ---
