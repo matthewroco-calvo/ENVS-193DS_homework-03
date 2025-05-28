@@ -85,6 +85,23 @@ ggplot( data = personal_data_clean, #starting plot using the clean dataframe
 
 Open circles represent observations of bike ride duration in seconds (total n = 30), and filled circles represent mean. Colors represent direction (purple: Campbell, orange: Home). Bars represent standard error.
 
+### D: Table presentation
+
+```{r}
+
+Table <- personal_data_summary |>  #creating the table as an object using summary data frame
+  select(direction, mean) |> #selecting to only include direction and mean
+  gt() |> #creating the table using gt 
+  fmt_number(
+columns = mean, #selecting columns to be edited
+decimals = 1 ) |> #rounding to 1 decimal point
+  cols_label( direction = "Direction", #altering names of columns/header to be capatialized and readable
+                     mean = "Mean") 
+
+Table #displaying the table
+
+```
+
 ## Problem 3: Statistical critique
 
 ### A: Revisit and Summarize
