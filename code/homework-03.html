@@ -73,10 +73,39 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </head>
 
-<body class="fullcontent">
+<body>
 
 <div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
-
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#setup-packages-and-data" id="toc-setup-packages-and-data" class="nav-link active" data-scroll-target="#setup-packages-and-data">Setup (packages and data)</a></li>
+  <li><a href="#problem-1-personal-data" id="toc-problem-1-personal-data" class="nav-link" data-scroll-target="#problem-1-personal-data">Problem 1: Personal Data</a>
+  <ul class="collapse">
+  <li><a href="#a-data-summarizing" id="toc-a-data-summarizing" class="nav-link" data-scroll-target="#a-data-summarizing">A: Data Summarizing</a></li>
+  <li><a href="#b-visualization" id="toc-b-visualization" class="nav-link" data-scroll-target="#b-visualization">B: Visualization</a></li>
+  <li><a href="#c-caption" id="toc-c-caption" class="nav-link" data-scroll-target="#c-caption">C: Caption</a></li>
+  <li><a href="#d-table-presentation" id="toc-d-table-presentation" class="nav-link" data-scroll-target="#d-table-presentation">D: Table presentation</a></li>
+  </ul></li>
+  <li><a href="#problem-2-affective-visualization" id="toc-problem-2-affective-visualization" class="nav-link" data-scroll-target="#problem-2-affective-visualization">Problem 2: Affective visualization</a>
+  <ul class="collapse">
+  <li><a href="#a-describe-in-words-what-an-affective-visualization-could-look-like-for-your-personal-data" id="toc-a-describe-in-words-what-an-affective-visualization-could-look-like-for-your-personal-data" class="nav-link" data-scroll-target="#a-describe-in-words-what-an-affective-visualization-could-look-like-for-your-personal-data">A: Describe in words what an affective visualization could look like for your personal data</a></li>
+  <li><a href="#b-create-a-sketch-on-paper-of-your-idea" id="toc-b-create-a-sketch-on-paper-of-your-idea" class="nav-link" data-scroll-target="#b-create-a-sketch-on-paper-of-your-idea">B: Create a sketch (on paper) of your idea</a></li>
+  <li><a href="#c-draft-of-visualization" id="toc-c-draft-of-visualization" class="nav-link" data-scroll-target="#c-draft-of-visualization">C: Draft of Visualization</a></li>
+  <li><a href="#d-artist-statement" id="toc-d-artist-statement" class="nav-link" data-scroll-target="#d-artist-statement">D: Artist Statement</a></li>
+  </ul></li>
+  <li><a href="#problem-3-statistical-critique" id="toc-problem-3-statistical-critique" class="nav-link" data-scroll-target="#problem-3-statistical-critique">Problem 3: Statistical critique</a>
+  <ul class="collapse">
+  <li><a href="#a-revisit-and-summarize" id="toc-a-revisit-and-summarize" class="nav-link" data-scroll-target="#a-revisit-and-summarize">A: Revisit and Summarize</a></li>
+  <li><a href="#b-visual-clarity" id="toc-b-visual-clarity" class="nav-link" data-scroll-target="#b-visual-clarity">B: Visual Clarity</a></li>
+  <li><a href="#c-aesthetic-clarity" id="toc-c-aesthetic-clarity" class="nav-link" data-scroll-target="#c-aesthetic-clarity">C: Aesthetic Clarity</a></li>
+  <li><a href="#d-recommendations" id="toc-d-recommendations" class="nav-link" data-scroll-target="#d-recommendations">D: Recommendations</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</div>
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
@@ -114,47 +143,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="setup-packages-and-data" class="level2">
 <h2 class="anchored" data-anchor-id="setup-packages-and-data">Setup (packages and data)</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.1.4     ✔ readr     2.1.5
-✔ forcats   1.0.0     ✔ stringr   1.5.1
-✔ ggplot2   3.5.2     ✔ tibble    3.2.1
-✔ lubridate 1.9.4     ✔ tidyr     1.3.1
-✔ purrr     1.0.4     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(janitor)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>
-Attaching package: 'janitor'
-
-The following objects are masked from 'package:stats':
-
-    chisq.test, fisher.test</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>here() starts at /Users/matthewroco-calvo/Desktop/Github/ENVS-193DS_homework-03</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gt)</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(flextable)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>
-Attaching package: 'flextable'
-
-The following object is masked from 'package:purrr':
-
-    compose</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>personal_data <span class="ot">&lt;-</span> <span class="fu">read_xlsx</span>(</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">here</span>(</span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">"data"</span>, <span class="st">"personaldatahw3.xlsx"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse) </span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(janitor)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gt)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(flextable)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>personal_data <span class="ot">&lt;-</span> <span class="fu">read_xlsx</span>( <span class="co">#reading in personal data</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">here</span>(</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="st">"data"</span>, <span class="st">"personaldatahw3.xlsx"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="problem-1-personal-data" class="level2">
@@ -166,48 +164,48 @@ The following object is masked from 'package:purrr':
 <section id="b-visualization" class="level3">
 <h3 class="anchored" data-anchor-id="b-visualization">B: Visualization</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>personal_data_clean <span class="ot">&lt;-</span> personal_data <span class="sc">|&gt;</span> </span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">clean_names</span>() <span class="co">#creating a new dataframe from personal_data and cleaning column names for ease of use</span></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>personal_data_summary <span class="ot">&lt;-</span> personal_data_clean <span class="sc">|&gt;</span> <span class="co">#creating a summary dataframe using the cleaned up data</span></span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(direction) <span class="sc">|&gt;</span> <span class="co">#grouping by direction</span></span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>( <span class="co">#using the summarize function </span></span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">n =</span> <span class="fu">length</span>(duration),  <span class="co"># count of data</span></span>
-<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">mean =</span> <span class="fu">mean</span>(duration), <span class="co"># calculating the means of both groups</span></span>
-<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">standard_deviation =</span> <span class="fu">sd</span>(duration), <span class="co"># calculating the standard deviations</span></span>
-<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">standard_error =</span> standard_deviation<span class="sc">/</span><span class="fu">sqrt</span>(n) <span class="co">#calculating standard error using the formula</span></span>
-<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>  ) </span>
-<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>( <span class="at">data =</span> personal_data_clean, <span class="co">#starting plot using the clean dataframe</span></span>
-<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>        <span class="fu">aes</span>(</span>
-<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>          <span class="at">x =</span> direction, <span class="co">#setting x and y axes</span></span>
-<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>          <span class="at">y =</span> duration,</span>
-<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>          <span class="at">color =</span> direction <span class="co">#coloring/sorting by the two directions</span></span>
-<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a>        )) <span class="sc">+</span></span>
-<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_jitter</span>( <span class="co">#adding a jitterplot as the first layer in order to show the underlying data</span></span>
-<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a>    <span class="at">height =</span> <span class="dv">0</span>, <span class="co">#setting no vertical jitter to preserve values</span></span>
-<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">width =</span> <span class="fl">0.1</span>, <span class="co">#reducing horizontal jitter for decluttering</span></span>
-<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">alpha =</span> <span class="fl">0.4</span>, <span class="co">#making points more transparent</span></span>
-<span id="cb10-23"><a href="#cb10-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">shape =</span> <span class="dv">21</span> <span class="co">#making shapes of points open circles</span></span>
-<span id="cb10-24"><a href="#cb10-24" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb10-25"><a href="#cb10-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_pointrange</span>( <span class="co">#adding a second layer using geom_pointrange to add mean and SE bars</span></span>
-<span id="cb10-26"><a href="#cb10-26" aria-hidden="true" tabindex="-1"></a>    <span class="at">data =</span> personal_data_summary, <span class="co">#using the summary dataframe</span></span>
-<span id="cb10-27"><a href="#cb10-27" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(</span>
-<span id="cb10-28"><a href="#cb10-28" aria-hidden="true" tabindex="-1"></a>      <span class="at">x =</span> direction, <span class="co"># putting direction (categorical variable) on the x axis</span></span>
-<span id="cb10-29"><a href="#cb10-29" aria-hidden="true" tabindex="-1"></a>      <span class="at">y =</span> mean, <span class="co">#y axis is the mean</span></span>
-<span id="cb10-30"><a href="#cb10-30" aria-hidden="true" tabindex="-1"></a>      <span class="at">ymax =</span> mean <span class="sc">+</span> standard_error, <span class="co">#adding error bars that are the standard error</span></span>
-<span id="cb10-31"><a href="#cb10-31" aria-hidden="true" tabindex="-1"></a>      <span class="at">ymin =</span> mean <span class="sc">-</span> standard_error</span>
-<span id="cb10-32"><a href="#cb10-32" aria-hidden="true" tabindex="-1"></a>    ) ) <span class="sc">+</span></span>
-<span id="cb10-33"><a href="#cb10-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>( <span class="co">#labeling the chart's x and y axis </span></span>
-<span id="cb10-34"><a href="#cb10-34" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Direction"</span>, </span>
-<span id="cb10-35"><a href="#cb10-35" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Duration (s)"</span></span>
-<span id="cb10-36"><a href="#cb10-36" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb10-37"><a href="#cb10-37" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>() <span class="sc">+</span> <span class="co">#setting a theme</span></span>
-<span id="cb10-38"><a href="#cb10-38" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span></span>
-<span id="cb10-39"><a href="#cb10-39" aria-hidden="true" tabindex="-1"></a>                     <span class="fu">c</span>(</span>
-<span id="cb10-40"><a href="#cb10-40" aria-hidden="true" tabindex="-1"></a>                     <span class="st">"Campbell"</span> <span class="ot">=</span> <span class="st">"darkorchid"</span>, <span class="co">#coloring datapoints differently</span></span>
-<span id="cb10-41"><a href="#cb10-41" aria-hidden="true" tabindex="-1"></a>                     <span class="st">"Home"</span> <span class="ot">=</span> <span class="st">"coral3"</span>)) <span class="sc">+</span></span>
-<span id="cb10-42"><a href="#cb10-42" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>personal_data_clean <span class="ot">&lt;-</span> personal_data <span class="sc">|&gt;</span> </span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">clean_names</span>() <span class="co">#creating a new dataframe from personal_data and cleaning column names for ease of use</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>personal_data_summary <span class="ot">&lt;-</span> personal_data_clean <span class="sc">|&gt;</span> <span class="co">#creating a summary dataframe using the cleaned up data</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(direction) <span class="sc">|&gt;</span> <span class="co">#grouping by direction</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>( <span class="co">#using the summarize function </span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">n =</span> <span class="fu">length</span>(duration),  <span class="co"># count of data</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">mean =</span> <span class="fu">mean</span>(duration), <span class="co"># calculating the means of both groups</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">standard_deviation =</span> <span class="fu">sd</span>(duration), <span class="co"># calculating the standard deviations</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">standard_error =</span> standard_deviation<span class="sc">/</span><span class="fu">sqrt</span>(n) <span class="co">#calculating standard error using the formula</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>  ) </span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>( <span class="at">data =</span> personal_data_clean, <span class="co">#starting plot using the clean dataframe</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>        <span class="fu">aes</span>(</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>          <span class="at">x =</span> direction, <span class="co">#setting x and y axes</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>          <span class="at">y =</span> duration,</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>          <span class="at">color =</span> direction <span class="co">#coloring/sorting by the two directions</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>        )) <span class="sc">+</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_jitter</span>( <span class="co">#adding a jitterplot as the first layer in order to show the underlying data</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>    <span class="at">height =</span> <span class="dv">0</span>, <span class="co">#setting no vertical jitter to preserve values</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">width =</span> <span class="fl">0.1</span>, <span class="co">#reducing horizontal jitter for decluttering</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">alpha =</span> <span class="fl">0.4</span>, <span class="co">#making points more transparent</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">shape =</span> <span class="dv">21</span> <span class="co">#making shapes of points open circles</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_pointrange</span>( <span class="co">#adding a second layer using geom_pointrange to add mean and SE bars</span></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>    <span class="at">data =</span> personal_data_summary, <span class="co">#using the summary dataframe</span></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>      <span class="at">x =</span> direction, <span class="co"># putting direction (categorical variable) on the x axis</span></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>      <span class="at">y =</span> mean, <span class="co">#y axis is the mean</span></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>      <span class="at">ymax =</span> mean <span class="sc">+</span> standard_error, <span class="co">#adding error bars that are the standard error</span></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>      <span class="at">ymin =</span> mean <span class="sc">-</span> standard_error</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>    ) ) <span class="sc">+</span></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>( <span class="co">#labeling the chart's x and y axis </span></span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Direction"</span>, </span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Duration (s)"</span></span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>() <span class="sc">+</span> <span class="co">#setting a theme</span></span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span></span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>                     <span class="fu">c</span>(</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>                     <span class="st">"Campbell"</span> <span class="ot">=</span> <span class="st">"darkorchid"</span>, <span class="co">#coloring datapoints differently</span></span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>                     <span class="st">"Home"</span> <span class="ot">=</span> <span class="st">"coral3"</span>)) <span class="sc">+</span></span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -225,34 +223,34 @@ The following object is masked from 'package:purrr':
 <section id="d-table-presentation" class="level3">
 <h3 class="anchored" data-anchor-id="d-table-presentation">D: Table presentation</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>Table <span class="ot">&lt;-</span> personal_data_summary <span class="sc">|&gt;</span>  <span class="co">#creating the table as an object using summary data frame</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(direction, mean) <span class="sc">|&gt;</span> <span class="co">#selecting to only include direction and mean</span></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>() <span class="sc">|&gt;</span> <span class="co">#creating the table using gt </span></span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">fmt_number</span>(</span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="at">columns =</span> mean, <span class="co">#selecting columns to be edited</span></span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="at">decimals =</span> <span class="dv">1</span> ) <span class="sc">|&gt;</span> <span class="co">#rounding to 1 decimal point</span></span>
-<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cols_label</span>( <span class="at">direction =</span> <span class="st">"Direction"</span>, <span class="co">#altering names of columns/header to be capatialized and readable</span></span>
-<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>                     <span class="at">mean =</span> <span class="st">"Mean (s)"</span>) </span>
-<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>Table <span class="co">#displaying the table</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>Table <span class="ot">&lt;-</span> personal_data_summary <span class="sc">|&gt;</span>  <span class="co">#creating the table as an object using summary data frame</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(direction, mean) <span class="sc">|&gt;</span> <span class="co">#selecting to only include direction and mean</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>() <span class="sc">|&gt;</span> <span class="co">#creating the table using gt </span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">fmt_number</span>(</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="at">columns =</span> mean, <span class="co">#selecting columns to be edited</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="at">decimals =</span> <span class="dv">1</span> ) <span class="sc">|&gt;</span> <span class="co">#rounding to 1 decimal point</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cols_label</span>( <span class="at">direction =</span> <span class="st">"Direction"</span>, <span class="co">#altering names of columns/header to be capatialized and readable</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>                     <span class="at">mean =</span> <span class="st">"Mean (s)"</span>) </span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>Table <span class="co">#displaying the table</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div id="lpbbtocjwm" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#lpbbtocjwm table {
+<div id="faamcazusn" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#faamcazusn table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#lpbbtocjwm thead, #lpbbtocjwm tbody, #lpbbtocjwm tfoot, #lpbbtocjwm tr, #lpbbtocjwm td, #lpbbtocjwm th {
+#faamcazusn thead, #faamcazusn tbody, #faamcazusn tfoot, #faamcazusn tr, #faamcazusn td, #faamcazusn th {
   border-style: none;
 }
 
-#lpbbtocjwm p {
+#faamcazusn p {
   margin: 0;
   padding: 0;
 }
 
-#lpbbtocjwm .gt_table {
+#faamcazusn .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -278,12 +276,12 @@ The following object is masked from 'package:purrr':
   border-left-color: #D3D3D3;
 }
 
-#lpbbtocjwm .gt_caption {
+#faamcazusn .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#lpbbtocjwm .gt_title {
+#faamcazusn .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -295,7 +293,7 @@ The following object is masked from 'package:purrr':
   border-bottom-width: 0;
 }
 
-#lpbbtocjwm .gt_subtitle {
+#faamcazusn .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -307,7 +305,7 @@ The following object is masked from 'package:purrr':
   border-top-width: 0;
 }
 
-#lpbbtocjwm .gt_heading {
+#faamcazusn .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -319,13 +317,13 @@ The following object is masked from 'package:purrr':
   border-right-color: #D3D3D3;
 }
 
-#lpbbtocjwm .gt_bottom_border {
+#faamcazusn .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#lpbbtocjwm .gt_col_headings {
+#faamcazusn .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -340,7 +338,7 @@ The following object is masked from 'package:purrr':
   border-right-color: #D3D3D3;
 }
 
-#lpbbtocjwm .gt_col_heading {
+#faamcazusn .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -360,7 +358,7 @@ The following object is masked from 'package:purrr':
   overflow-x: hidden;
 }
 
-#lpbbtocjwm .gt_column_spanner_outer {
+#faamcazusn .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -372,15 +370,15 @@ The following object is masked from 'package:purrr':
   padding-right: 4px;
 }
 
-#lpbbtocjwm .gt_column_spanner_outer:first-child {
+#faamcazusn .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#lpbbtocjwm .gt_column_spanner_outer:last-child {
+#faamcazusn .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#lpbbtocjwm .gt_column_spanner {
+#faamcazusn .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -392,11 +390,11 @@ The following object is masked from 'package:purrr':
   width: 100%;
 }
 
-#lpbbtocjwm .gt_spanner_row {
+#faamcazusn .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#lpbbtocjwm .gt_group_heading {
+#faamcazusn .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -422,7 +420,7 @@ The following object is masked from 'package:purrr':
   text-align: left;
 }
 
-#lpbbtocjwm .gt_empty_group_heading {
+#faamcazusn .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -437,15 +435,15 @@ The following object is masked from 'package:purrr':
   vertical-align: middle;
 }
 
-#lpbbtocjwm .gt_from_md > :first-child {
+#faamcazusn .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#lpbbtocjwm .gt_from_md > :last-child {
+#faamcazusn .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#lpbbtocjwm .gt_row {
+#faamcazusn .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -464,7 +462,7 @@ The following object is masked from 'package:purrr':
   overflow-x: hidden;
 }
 
-#lpbbtocjwm .gt_stub {
+#faamcazusn .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -477,7 +475,7 @@ The following object is masked from 'package:purrr':
   padding-right: 5px;
 }
 
-#lpbbtocjwm .gt_stub_row_group {
+#faamcazusn .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -491,15 +489,15 @@ The following object is masked from 'package:purrr':
   vertical-align: top;
 }
 
-#lpbbtocjwm .gt_row_group_first td {
+#faamcazusn .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#lpbbtocjwm .gt_row_group_first th {
+#faamcazusn .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#lpbbtocjwm .gt_summary_row {
+#faamcazusn .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -509,16 +507,16 @@ The following object is masked from 'package:purrr':
   padding-right: 5px;
 }
 
-#lpbbtocjwm .gt_first_summary_row {
+#faamcazusn .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#lpbbtocjwm .gt_first_summary_row.thick {
+#faamcazusn .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#lpbbtocjwm .gt_last_summary_row {
+#faamcazusn .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -528,7 +526,7 @@ The following object is masked from 'package:purrr':
   border-bottom-color: #D3D3D3;
 }
 
-#lpbbtocjwm .gt_grand_summary_row {
+#faamcazusn .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -538,7 +536,7 @@ The following object is masked from 'package:purrr':
   padding-right: 5px;
 }
 
-#lpbbtocjwm .gt_first_grand_summary_row {
+#faamcazusn .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -548,7 +546,7 @@ The following object is masked from 'package:purrr':
   border-top-color: #D3D3D3;
 }
 
-#lpbbtocjwm .gt_last_grand_summary_row_top {
+#faamcazusn .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -558,11 +556,11 @@ The following object is masked from 'package:purrr':
   border-bottom-color: #D3D3D3;
 }
 
-#lpbbtocjwm .gt_striped {
+#faamcazusn .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#lpbbtocjwm .gt_table_body {
+#faamcazusn .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -571,7 +569,7 @@ The following object is masked from 'package:purrr':
   border-bottom-color: #D3D3D3;
 }
 
-#lpbbtocjwm .gt_footnotes {
+#faamcazusn .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -585,7 +583,7 @@ The following object is masked from 'package:purrr':
   border-right-color: #D3D3D3;
 }
 
-#lpbbtocjwm .gt_footnote {
+#faamcazusn .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -594,7 +592,7 @@ The following object is masked from 'package:purrr':
   padding-right: 5px;
 }
 
-#lpbbtocjwm .gt_sourcenotes {
+#faamcazusn .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -608,7 +606,7 @@ The following object is masked from 'package:purrr':
   border-right-color: #D3D3D3;
 }
 
-#lpbbtocjwm .gt_sourcenote {
+#faamcazusn .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -616,72 +614,72 @@ The following object is masked from 'package:purrr':
   padding-right: 5px;
 }
 
-#lpbbtocjwm .gt_left {
+#faamcazusn .gt_left {
   text-align: left;
 }
 
-#lpbbtocjwm .gt_center {
+#faamcazusn .gt_center {
   text-align: center;
 }
 
-#lpbbtocjwm .gt_right {
+#faamcazusn .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#lpbbtocjwm .gt_font_normal {
+#faamcazusn .gt_font_normal {
   font-weight: normal;
 }
 
-#lpbbtocjwm .gt_font_bold {
+#faamcazusn .gt_font_bold {
   font-weight: bold;
 }
 
-#lpbbtocjwm .gt_font_italic {
+#faamcazusn .gt_font_italic {
   font-style: italic;
 }
 
-#lpbbtocjwm .gt_super {
+#faamcazusn .gt_super {
   font-size: 65%;
 }
 
-#lpbbtocjwm .gt_footnote_marks {
+#faamcazusn .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#lpbbtocjwm .gt_asterisk {
+#faamcazusn .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#lpbbtocjwm .gt_indent_1 {
+#faamcazusn .gt_indent_1 {
   text-indent: 5px;
 }
 
-#lpbbtocjwm .gt_indent_2 {
+#faamcazusn .gt_indent_2 {
   text-indent: 10px;
 }
 
-#lpbbtocjwm .gt_indent_3 {
+#faamcazusn .gt_indent_3 {
   text-indent: 15px;
 }
 
-#lpbbtocjwm .gt_indent_4 {
+#faamcazusn .gt_indent_4 {
   text-indent: 20px;
 }
 
-#lpbbtocjwm .gt_indent_5 {
+#faamcazusn .gt_indent_5 {
   text-indent: 25px;
 }
 
-#lpbbtocjwm .katex-display {
+#faamcazusn .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#lpbbtocjwm div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#faamcazusn div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>

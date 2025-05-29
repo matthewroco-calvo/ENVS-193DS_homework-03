@@ -2,8 +2,12 @@
 title: "Homework 3 193DS"
 author: Matthew Roco-Calvo
 date: 05-28-2025
-format: html
-editor: visual
+format:
+  html:
+    toc: true # use this to display a table of contents
+execute:
+  message: false # use this to make sure messages don't show up
+  warning: false # use this to make sure warnings don't show up
 ---
 
 **Github Repository link:** https://github.com/matthewroco-calvo/ENVS-193DS_homework-03
@@ -12,14 +16,14 @@ editor: visual
 
 ```{r}
 
-library(tidyverse)
+library(tidyverse) 
 library(janitor)
 library(here)
 library(gt)
 library(flextable)
 library(readxl)
 
-personal_data <- read_xlsx(
+personal_data <- read_xlsx( #reading in personal data
   here(
   "data", "personaldatahw3.xlsx"))
 
